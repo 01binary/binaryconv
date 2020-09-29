@@ -1,10 +1,10 @@
 # Mono Image to Binary Array Converter
 
-This command line utility will load most common image formats and output a C/C++ header file that can be used in Arduino or similar platforms to draw this as a bitmap from a byte array.
+This command line utility will load most common image formats and output a C/C++ header file that can be used in Arduino or similar platforms to draw it as a bitmap from a byte array.
 
 Usage:
 ```
-binaryconv imagepath [outputname].
+binaryconv imagepath [outputname]
 ```
 
 So basically given a monochrome image like this:
@@ -14,10 +14,10 @@ So basically given a monochrome image like this:
 ...you get output like:
 
 ```
-#define switchback_width 128
-#define switchback_height 9
+#define image_width 128
+#define image_height 9
 
-const uint8_t PROGMEM switchback_data[] = {
+const uint8_t PROGMEM image_data[] = {
     B00111111, B11110000, B10000110, B00010010, B00000100, B11111110, B01111111,
     B11111000, B00000010, B00011111, B11111000, B01111111, B11110001, B11111111,
     B11100000, B10000000, B01000000, B00001000, B01001001, B00100001, B00000101,
