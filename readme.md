@@ -45,4 +45,4 @@ const uint8_t PROGMEM image_data[] = {
 
 The bytes are arranged into rows of 7 each, each bit is literally 1 or 0.
 
-Please make sure the image is already monochrome going in, this simply uses the value of "B" so it assumes you dithered it and did color reduction in a graphics program before running this utility.
+Please make sure the image is already monochrome going in, this simply uses the value of "B" (from RGB) so it assumes you dithered it and did color reduction in a graphics program before running this utility.
